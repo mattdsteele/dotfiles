@@ -1,3 +1,6 @@
+" Pathogen setup
+call pathogen#infect()
+
 syntax enable
 set ai
 set history=100
