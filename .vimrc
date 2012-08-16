@@ -1,6 +1,7 @@
 " Pathogen setup
 call pathogen#infect()
 
+" Sane defaults
 syntax enable
 set ai
 set history=100
@@ -32,3 +33,16 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
+
+" Resize windows to give the active one the most focus. Inspired by grb
+" dotfiles
+set winwidth=84
+" We have to have a winheight bigger than we want to set winminheight. But if
+" we set winheight to be huge before winminheight, the winminheight set will
+" fail.
+set winheight=5
+set winminheight=5
+set winheight=999
+
+" Actual customizations now
+nnoremap <leader><leader> <c-^>
