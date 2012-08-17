@@ -15,6 +15,9 @@ filetype plugin on
 :let mapleader = ","
 set ls=2
 
+colorscheme desert
+set background=dark
+
 "" whitespace
 set shiftwidth=2
 set expandtab
