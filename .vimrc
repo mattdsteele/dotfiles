@@ -46,3 +46,5 @@ set winheight=999
 
 " Actual customizations now
 nnoremap <leader><leader> <c-^>
+nnoremap <leader>t :CtrlP <cr>
+
