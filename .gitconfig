@@ -1,0 +1,13 @@
+[user]
+	name = Matt Steele
+	email = orphum@gmail.com
+[color]
+	ui = true
+[alias]
+  co = checkout
+  ci = commit
+  st = status -sb
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
