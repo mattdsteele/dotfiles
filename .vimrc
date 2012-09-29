@@ -52,6 +52,6 @@ nnoremap <leader><leader> <c-^>
 nnoremap <leader>t :CtrlP <cr>
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.git|\.hg|\.svn)$',
+  \ 'dir':  '\v[\/](\.git|\.hg|\.svn|node_modules)$',
   \ 'file': '\.exe$\|\.so$\|\.dll$',
   \ }
