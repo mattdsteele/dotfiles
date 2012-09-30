@@ -13,3 +13,6 @@
 [submodule ".vim/bundle/vim-less.git"]
 	path = .vim/bundle/vim-less.git
 	url = https://github.com/lunaru/vim-less.git
+[submodule ".vim/bundle/zencoding-vim"]
+	path = .vim/bundle/zencoding-vim
+	url = https://github.com/mattn/zencoding-vim.git
