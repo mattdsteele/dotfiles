@@ -1,18 +1,18 @@
-[submodule ".vim/bundle/ctrlp.vim"]
-	path = .vim/bundle/ctrlp.vim
+[submodule "vim.symlink/bundle/ctrlp.vim"]
+	path = vim.symlink/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule ".vim/bundle/vim-matchit"]
-	path = .vim/bundle/vim-matchit
-	url = https://github.com/edsono/vim-matchit.git
-[submodule ".vim/bundle/vim-surround"]
-	path = .vim/bundle/vim-surround
-	url = https://github.com/tpope/vim-surround.git
-[submodule ".vim/bundle/syntastic"]
-	path = .vim/bundle/syntastic
+[submodule "vim.symlink/bundle/syntastic.vim"]
+	path = vim.symlink/bundle/syntastic.vim
 	url = https://github.com/scrooloose/syntastic.git
-[submodule ".vim/bundle/vim-less.git"]
-	path = .vim/bundle/vim-less.git
-	url = https://github.com/lunaru/vim-less.git
-[submodule ".vim/bundle/zencoding-vim"]
-	path = .vim/bundle/zencoding-vim
+[submodule "vim.symlink/bundle/vim-less"]
+	path = vim.symlink/bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git
+[submodule "vim.symlink/bundle/vim-matchit"]
+	path = vim.symlink/bundle/vim-matchit
+	url = https://github.com/edsono/vim-matchit.git
+[submodule "vim.symlink/bundle/vim-surround"]
+	path = vim.symlink/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim.symlink/bundle/zencoding-vim"]
+	path = vim.symlink/bundle/zencoding-vim
 	url = https://github.com/mattn/zencoding-vim.git
