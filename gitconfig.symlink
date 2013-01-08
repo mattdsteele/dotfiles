@@ -11,5 +11,8 @@
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   type = cat-file -t
   dump = cat-file -p
+
+  # diff grep changes between two commits
+  dgc = "!sh -c 'git ls-files | grep $1 | xargs git diff $2 $3 -- ' -"
 [core]
 	autocrlf = true
