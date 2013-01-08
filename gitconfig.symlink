@@ -14,5 +14,3 @@
 
   # diff grep changes between two commits
   dgc = "!sh -c 'git ls-files | grep $1 | xargs git diff $2 $3 -- ' -"
-[core]
-	autocrlf = true
