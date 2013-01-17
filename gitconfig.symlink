@@ -3,12 +3,16 @@
 	email = orphum@gmail.com
 [color]
 	ui = true
+  status = auto
+  diff = auto
+  branch = auto
 [alias]
   co = checkout
   ci = commit
   st = status -sb
   br = branch
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  logp = log --pretty=format:'%Cred%h%Creset %C(cyan)%an %Cgreen(%cr) -%C(yellow)%d%Creset %s %Creset' --abbrev-commit
   type = cat-file -t
   dump = cat-file -p
 
