@@ -47,6 +47,9 @@ set winheight=5
 set winminheight=5
 set winheight=999
 
+" Autocomplete
+set omnifunc=syntaxcomplete#Complete
+
 " Actual customizations now
 nnoremap <leader><leader> <c-^>
 nnoremap <leader>t :CtrlP <cr>
@@ -57,3 +60,4 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.git|\.hg|\.svn|node_modules)$',
   \ 'file': '\.exe$\|\.so$\|\.dll$',
   \ }
+
