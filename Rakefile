@@ -47,4 +47,4 @@ task :uninstall do
   end
 end
 
-task :default => 'install'
+task :default => 'install' 

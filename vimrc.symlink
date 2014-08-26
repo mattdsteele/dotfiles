@@ -1,5 +1,6 @@
 " Vundle setup
 set nocompatible              " be iMproved, required
+filetype on                   " see https://github.com/gmarik/Vundle.vim/issues/167
 filetype off                  " required
 set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
@@ -68,8 +69,6 @@ set omnifunc=syntaxcomplete#Complete
 " Actual customizations now
 nnoremap <leader><leader> <c-^>
 nnoremap <leader>t :CtrlP <cr>
-
-let g:user_zen_leader_key = '<c-k>'
 
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.git|\.hg|\.svn|node_modules)$',
