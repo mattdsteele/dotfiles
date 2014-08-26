@@ -16,3 +16,6 @@
 [submodule "vim.symlink/bundle/zencoding-vim"]
 	path = vim.symlink/bundle/zencoding-vim
 	url = https://github.com/mattn/zencoding-vim.git
+[submodule "vim.symlink/bundle/vim-javascript"]
+	path = vim.symlink/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
