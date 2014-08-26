@@ -1,5 +1,21 @@
-" Pathogen setup
-call pathogen#infect()
+" Vundle setup
+set nocompatible              " be iMproved, required
+filetype off                  " required
+set rtp+=~/.vim/bundle/vundle
+call vundle#begin()
+
+Bundle 'gmarik/vundle'
+
+" My plugins, let me show you them
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'pangloss/vim-javascript'
+Bundle 'edsono/vim-matchit'
+Bundle 'tpope/vim-surround'
+
+" Done with Vundle
+call vundle#end()            " required
+filetype plugin indent on
 
 " Sane defaults
 syntax enable
@@ -7,7 +23,6 @@ set ai
 set history=100
 set ruler 
 set number
-set nocompatible
 set autoindent
 set smartindent
 filetype indent on
