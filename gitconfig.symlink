@@ -15,6 +15,7 @@
   logp = log --pretty=format:'%Cred%h%Creset %C(cyan)%an %Cgreen(%cr) -%C(yellow)%d%Creset %s %Creset' --abbrev-commit
   type = cat-file -t
   dump = cat-file -p
+  compare = log --left-right --graph --cherry-pick --oneline
 
   # diff grep changes between two commits
   dgc = "!sh -c 'git ls-files | grep $1 | xargs git diff $2 $3 -- ' -"
