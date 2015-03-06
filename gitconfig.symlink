@@ -23,3 +23,5 @@
   update = !git fetch upstream && git rebase upstream/`git rev-parse --abbrev-ref HEAD`
 [push]
 	default = simple
+[rebase]
+	autostash = true
