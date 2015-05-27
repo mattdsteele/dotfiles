@@ -2,7 +2,7 @@
 set nocompatible              " be iMproved, required
 filetype on                   " see https://github.com/gmarik/Vundle.vim/issues/167
 filetype off                  " required
-set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Bundle 'gmarik/vundle'
