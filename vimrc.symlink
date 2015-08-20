@@ -1,21 +1,18 @@
-" Vundle setup
 set nocompatible              " be iMproved, required
-filetype on                   " see https://github.com/gmarik/Vundle.vim/issues/167
-filetype off                  " required
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
 
-Bundle 'gmarik/vundle'
+" vim-plug setup
+call plug#begin('~/.vim/plugged')
 
 " My plugins, let me show you them
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'pangloss/vim-javascript'
-Bundle 'edsono/vim-matchit'
-Bundle 'tpope/vim-surround'
+Plug 'kien/ctrlp.vim'
+Plug 'scrooloose/syntastic'
+Plug 'pangloss/vim-javascript'
+Plug 'edsono/vim-matchit'
+Plug 'tpope/vim-surround'
 
-" Done with Vundle
-call vundle#end()            " required
+" Done with vim-lug
+call plug#end()
+
 filetype plugin indent on
 
 " Sane defaults
