@@ -9,6 +9,7 @@ Plug 'scrooloose/syntastic'
 Plug 'pangloss/vim-javascript'
 Plug 'edsono/vim-matchit'
 Plug 'tpope/vim-surround'
+Plug 'rking/ag.vim'
 
 " Done with vim-lug
 call plug#end()
@@ -66,9 +67,16 @@ set omnifunc=syntaxcomplete#Complete
 " Actual customizations now
 nnoremap <leader><leader> <c-^>
 nnoremap <leader>t :CtrlP <cr>
+nnoremap <leader>f :Ag 
 
 " ctrlp
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ --ignore .git
+      \ --ignore .svn
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore "**/*.pyc"
+      \ -g ""'
 
 " Window movement shortcuts
  " move to the window in the direction shown, or create a new window
