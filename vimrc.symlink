@@ -5,7 +5,7 @@ call plug#begin('~/.vim/plugged')
 
 " My plugins, let me show you them
 Plug 'kien/ctrlp.vim'
-Plug 'scrooloose/syntastic'
+Plug 'benekastah/neomake'
 Plug 'pangloss/vim-javascript'
 Plug 'edsono/vim-matchit'
 Plug 'tpope/vim-surround'
@@ -77,6 +77,14 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ --ignore .DS_Store
       \ --ignore "**/*.pyc"
       \ -g ""'
+
+" neomake
+autocmd! BufWritePost * Neomake
+let g:neomake_javascript_jshint_maker = {
+    \ 'args': ['--verbose'],
+    \ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
+\ }
+let g:neomake_javascript_enabled_markers = ['jshint', 'jscs']
 
 " Window movement shortcuts
  " move to the window in the direction shown, or create a new window
