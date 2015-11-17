@@ -1,0 +1,23 @@
+# Some sane defaults for tmux
+set -g default-terminal "screen-256color"
+set -g status-utf8 on
+
+# make delay shorter
+set -sg escape-time 0
+
+# unbind default prefix and set it to Ctrl+a
+unbind C-b
+set -g prefix C-a
+bind C-a send-prefix
+
+
+# Rather than constraining window size to the maximum size of any client
+# connected to the *session*, constrain window size to the maximum size of any
+# client connected to *that window*. Much more reasonable.
+setw -g aggressive-resize on
+
+set -g status-right-length 150
+set -g status-interval 5
+tm_spotify="#[fg=$tm_color_music]#(osascript ~/dotfiles/applescripts/spotify.scpt)"
+
+set -g status-right $tm_spotify
