@@ -10,6 +10,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'edsono/vim-matchit'
 Plug 'tpope/vim-surround'
 Plug 'rking/ag.vim'
+Plug 'sjl/badwolf'
 
 " Done with vim-lug
 call plug#end()
@@ -30,7 +31,7 @@ filetype plugin on
 set ls=2
 
 " visualizations
-colorscheme desert
+colorscheme badwolf
 set background=dark
 set cursorline "highlight current line
 set showmatch "highlight matching braces
