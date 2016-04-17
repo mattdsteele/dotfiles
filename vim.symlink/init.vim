@@ -29,8 +29,16 @@ filetype plugin on
 :let mapleader = ","
 set ls=2
 
+" visualizations
 colorscheme desert
 set background=dark
+set cursorline "highlight current line
+set showmatch "highlight matching braces
+
+" movement
+" move by visual line
+nnoremap j gj
+nnoremap k gk
 
 "" whitespace
 set shiftwidth=2
@@ -40,7 +48,7 @@ set softtabstop=2
 
 "" search options
 set nohlsearch
-set incsearch
+set incsearch "incremental search
 set ignorecase
 set smartcase
 
@@ -80,11 +88,7 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
 
 " neomake
 autocmd! BufWritePost * Neomake
-let g:neomake_javascript_jshint_maker = {
-    \ 'args': ['--verbose'],
-    \ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
-\ }
-let g:neomake_javascript_enabled_markers = ['jshint', 'jscs']
+let g:neomake_javascript_enabled_makers = ['eslint'] "assumes eslint installed globally
 
 " Window movement shortcuts
  " move to the window in the direction shown, or create a new window
