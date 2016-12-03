@@ -11,6 +11,7 @@ Plug 'edsono/vim-matchit'
 Plug 'tpope/vim-surround'
 Plug 'rking/ag.vim'
 Plug 'sjl/badwolf'
+Plug 'leafgarland/typescript-vim'
 
 " Done with vim-lug
 call plug#end()
