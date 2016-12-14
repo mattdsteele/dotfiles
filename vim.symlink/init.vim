@@ -11,6 +11,9 @@ Plug 'edsono/vim-matchit'
 Plug 'tpope/vim-surround'
 Plug 'rking/ag.vim'
 Plug 'sjl/badwolf'
+
+Plug 'Quramy/tsuquyomi'
+Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'leafgarland/typescript-vim'
 
 " Done with vim-lug
