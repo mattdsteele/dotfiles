@@ -5,7 +5,7 @@ call plug#begin('~/.vim/plugged')
 
 " My plugins, let me show you them
 Plug 'kien/ctrlp.vim'
-Plug 'benekastah/neomake'
+Plug 'w0rp/ale'
 Plug 'pangloss/vim-javascript'
 Plug 'edsono/vim-matchit'
 Plug 'tpope/vim-surround'
@@ -90,10 +90,6 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ --ignore .DS_Store
       \ --ignore "**/*.pyc"
       \ -g ""'
-
-" neomake
-autocmd! BufWritePost * Neomake
-let g:neomake_javascript_enabled_makers = ['eslint'] "assumes eslint installed globally
 
 " Window movement shortcuts
  " move to the window in the direction shown, or create a new window
