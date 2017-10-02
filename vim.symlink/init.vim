@@ -85,6 +85,15 @@ nnoremap <leader>f :Ag
 " TypeScript
 let g:deoplete#enable_at_startup = 1
 
+" ALE
+let g:ale_linters = {}
+let g:ale_linters['typescript'] = ['tslint', 'tsserver', 'typecheck']
+
+let g:ale_fixers = {}
+let g:ale_fixers['typescript'] = ['prettier']
+let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_fix_on_save = 1
+
 " ctrlp
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ --ignore .git
