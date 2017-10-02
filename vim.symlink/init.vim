@@ -11,6 +11,10 @@ Plug 'adelarsq/vim-matchit'
 Plug 'tpope/vim-surround'
 Plug 'rking/ag.vim'
 Plug 'sjl/badwolf'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'mhartington/nvim-typescript'
+
 
 " Done with vim-plug
 call plug#end()
@@ -77,6 +81,9 @@ set omnifunc=syntaxcomplete#Complete
 nnoremap <leader><leader> <c-^>
 nnoremap <leader>t :CtrlP <cr>
 nnoremap <leader>f :Ag 
+
+" TypeScript
+let g:deoplete#enable_at_startup = 1
 
 " ctrlp
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
