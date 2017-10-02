@@ -7,16 +7,12 @@ call plug#begin('~/.vim/plugged')
 Plug 'kien/ctrlp.vim'
 Plug 'w0rp/ale'
 Plug 'pangloss/vim-javascript'
-Plug 'edsono/vim-matchit'
+Plug 'adelarsq/vim-matchit'
 Plug 'tpope/vim-surround'
 Plug 'rking/ag.vim'
 Plug 'sjl/badwolf'
 
-Plug 'Quramy/tsuquyomi'
-Plug 'Shougo/vimproc.vim', {'do': 'make'}
-Plug 'leafgarland/typescript-vim'
-
-" Done with vim-lug
+" Done with vim-plug
 call plug#end()
 
 filetype plugin indent on
